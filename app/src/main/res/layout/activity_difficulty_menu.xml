@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/game_bg"
+    tools:context=".DifficultyMenuActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите уровень"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnEasy"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Кнопка "Легкий" -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEasy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Легкий"
+        android:paddingVertical="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnMedium"/>
+
+    <!-- Кнопка "Средний" -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Средний"
+        android:paddingVertical="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnEasy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnHard"/>
+
+    <!-- Кнопка "Сложный" -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Сложный"
+        android:paddingVertical="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

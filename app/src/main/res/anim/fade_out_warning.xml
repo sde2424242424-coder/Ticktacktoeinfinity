@@ -1,0 +1,13 @@
+<!-- Файл: res/anim/fade_out_warning.xml -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+
+    <!-- Анимация затухания от полной видимости (1.0) до почти полной невидимости (0.1) -->
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.1"
+        android:duration="700"
+        android:repeatMode="reverse"
+        android:repeatCount="infinite" />
+
+</set>
